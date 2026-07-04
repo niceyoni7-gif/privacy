@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy — Gmail Multi-Account Notifier</title>
+    <title>Privacy Policy — NiceYoni Multi-Account Mail Notifier</title>
     <style>
         body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; background: #f8f9fa; color: #3c4043; line-height: 1.6; }
         .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; }
@@ -18,50 +18,64 @@
 <body>
 <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p><strong>Gmail Multi-Account Notifier</strong> by <strong>NiceYoni</strong> (&quot;the Extension&quot;) respects your privacy. This policy explains what data is accessed and how it is used.</p>
+    <p><strong>NiceYoni Multi-Account Mail Notifier</strong> (&quot;the Extension&quot;) respects your privacy. This Privacy Policy explains what information the Extension accesses, how it is used, and how it is protected.</p>
     <p><em>Effective date: June 2026</em></p>
     <p class="note">This extension is not affiliated with, endorsed by, or sponsored by Google LLC. Gmail is a trademark of Google LLC.</p>
 
     <h2>Data We Access</h2>
     <ul>
-        <li><strong>Gmail data</strong> — unread inbox messages (sender, subject, snippet) via the Google Gmail API, only after you connect an account.</li>
-        <li><strong>Google account email</strong> — to identify connected accounts.</li>
+        <li><strong>Gmail data</strong> — unread inbox messages (sender, subject, snippet) via the Google Gmail API, only after you explicitly connect an account.</li>
+        <li><strong>Google account email address</strong> — used only to identify your connected accounts within the Extension.</li>
         <li><strong>Extension settings</strong> — stored locally (scan frequency, notification preferences, custom sounds, Do Not Disturb schedules).</li>
     </ul>
 
     <h2>How Data Is Used</h2>
     <ul>
-        <li>Display emails in the extension popup.</li>
-        <li>Show desktop notifications for new mail.</li>
-        <li>Perform actions you request (mark read, archive, delete, star, spam).</li>
+        <li>Display unread emails in the Extension popup.</li>
+        <li>Show desktop notifications for newly received email.</li>
+        <li>Perform actions you explicitly request (mark read, archive, delete, star, spam).</li>
+        <li>Store your personal preferences and settings locally on your device.</li>
     </ul>
 
     <h2>Data Storage &amp; Sharing</h2>
-    <p>All data is stored <strong>locally on your device</strong> using Chrome&apos;s storage API. OAuth tokens are stored locally and refreshed through Google&apos;s secure OAuth flow. We do not operate external servers, do not sell your data, and do not transmit email content to third parties.</p>
+    <p>All data is stored <strong>locally on your device</strong> using Chrome Extension Storage. Google OAuth access and refresh tokens are stored locally and managed through Google's secure OAuth authorization flow. We do not operate backend servers, do not collect or store Gmail data on our own infrastructure, do not sell your data, and do not transmit your email content to third parties except when communicating directly with Google services required for the Extension to function.</p>
     <p>The Extension&apos;s use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>Data Protection &amp; Security</h2>
+    <p>We take the security of user data obtained through Google APIs seriously. Because the Extension operates primarily on your local device, we rely on the following robust security measures:</p>
+    <ul>
+        <li><strong>Secure Token Storage:</strong> Google OAuth access and refresh tokens are stored locally using Chrome Extension Storage and are accessible only to this Extension.</li>
+        <li><strong>Encryption in Transit:</strong> All communication between the Extension and Google APIs (and Gravatar, when enabled) is strictly protected using industry-standard HTTPS/TLS encryption.</li>
+        <li><strong>No Backend Risk:</strong> We do not operate backend servers that collect, process, or store Gmail data or OAuth tokens, eliminating risks of external server-side data breaches.</li>
+        <li><strong>No AI/ML Training:</strong> Google Workspace API data is not used to develop, improve, or train generalized artificial intelligence (AI) or machine learning (ML) models.</li>
+    </ul>
 
     <h2>Third-Party Services</h2>
     <ul>
-        <li><strong>Google APIs</strong> — Gmail and OAuth (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>).</li>
-        <li><strong>Gravatar</strong> — optional sender profile images in the popup; only a hashed sender email is sent to gravatar.com.</li>
-        <li><strong>Ko-fi</strong> — optional voluntary donation link; opens only when you click &quot;Donate&quot;. No data is shared automatically.</li>
+        <li><strong>Google APIs</strong> — Gmail API and Google OAuth authentication (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>).</li>
+        <li><strong>Gravatar</strong> — optional sender profile images in the popup; only a hashed sender email address is sent to gravatar.com.</li>
+        <li><strong>Ko-fi</strong> — optional donation page that opens only if you choose to visit it. No data is shared automatically.</li>
     </ul>
 
     <h2>Permissions</h2>
     <ul>
-        <li><em>identity</em> — Google sign-in via Chrome Identity API.</li>
-        <li><em>notifications</em> — desktop alerts for new mail.</li>
-        <li><em>storage</em> — local settings and email cache.</li>
-        <li><em>alarms</em> — periodic background inbox checks.</li>
-        <li><em>offscreen</em> — playback of custom notification sounds (Manifest V3).</li>
-        <li><em>tabs</em> — close the privacy policy tab or open Gmail / donation pages when you choose.</li>
+        <li><em>identity</em> — Sign in with your Google account using the Chrome Identity API.</li>
+        <li><em>notifications</em> — Display desktop notifications for new email.</li>
+        <li><em>storage</em> — Store settings, cached email information, and OAuth tokens locally.</li>
+        <li><em>alarms</em> — Periodically check for new unread messages.</li>
+        <li><em>offscreen</em> — Play custom notification sounds (Manifest V3).</li>
+        <li><em>tabs</em> — Open Gmail, the Privacy Policy, or the donation page when you request it.</li>
     </ul>
 
     <h2>Data Deletion</h2>
-    <p>Remove an account in Extension Settings, or uninstall the extension to delete all locally stored data.</p>
+    <p>You may remove any connected Google account from the Extension Settings at any time. Uninstalling the Extension removes all locally stored Extension data from your device. You may also revoke the Extension's access at any time through your Google Account security settings.</p>
 
     <h2>Contact</h2>
-    <p>Questions about privacy: <a href="https://ko-fi.com/niceyoni" target="_blank" rel="noopener">NiceYoni on Ko-fi</a> or via the Chrome Web Store listing.</p>
+    <p>If you have any questions about this Privacy Policy or the Extension's handling of user data, you may contact:</p>
+    <ul>
+        <li><strong>Email:</strong> <a href="mailto:niceyoni7@gmail.com">niceyoni7@gmail.com</a></li>
+        <li><strong>Ko-fi:</strong> <a href="https://ko-fi.com/niceyoni" target="_blank" rel="noopener">NiceYoni on Ko-fi</a></li>
+    </ul>
     <p>Public policy URL: <a href="https://niceyoni7-gif.github.io/privacy/">niceyoni7-gif.github.io/privacy</a></p>
 </div>
 </body>
